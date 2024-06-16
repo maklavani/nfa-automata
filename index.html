@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>NFA Automata</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize-3.0.1.css" />
+		<link rel="stylesheet" type="text/css" href="css/template.css" />
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/template.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="wrapper-in">
+				<div id="header">
+					<div id="pictrue">
+						<div id="pictrue-in"></div>
+					</div>
+					<div id="name">
+						<h1>Hossein Maklavani</h1>
+					</div>
+					<div id="helps"></div>
+				</div>
+				<svg id="body" version="1.1" x="0px" y="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+				<div id="controls">
+					<div class="controls-item icon-mouse active"></div>
+					<div class="controls-item icon-add-state"></div>
+					<div class="controls-item icon-remove-state"></div>
+					<div class="controls-item icon-add-line"></div>
+					<div class="controls-item icon-remove-line"></div>
+					<div class="controls-item icon-owner"></div>
+					<div class="controls-item start">شروع</div>
+					<div class="controls-item end">پایان</div>
+					<div class="controls-item icon-reset"></div>
+					<div class="controls-item icon-text cib"></div>
+					<div class="controls-item icon-check cib"></div>
+					<div class="item-checked cib"></div>
+				</div>
+
+				<div id="window" class="hidden">
+					<div id="window-in">
+						<div id="window-in-text">
+							Enter the name of the letter you want to transfer<br />
+							If you enter blank or a number, Landa will be calculated
+						</div>
+
+						<input autofocus id="window-in-input" type="text" name="window-in-input" />
+						<div id="window-in-button">برو</div>
+					</div>
+				</div>
+
+				<div id="input" class="hidden">
+					<div id="input-in">
+						<div id="input-in-text">
+							Please enter the desired string that contains letters<br />
+							Enter ~ if you want to check Landa
+						</div>
+						<input id="input-in-input" type="text" name="input-in-input" />
+						<div id="input-in-button">برو</div>
+					</div>
+				</div>
+
+				<div id="alert" class="hidden">
+					<div id="alert-in">
+						<div id="alert-in-text">
+							<p>You encountered an error for which the reason(s) are:<br /></p>
+							<div id="alert-in-number"></div>
+						</div>
+						<div id="alert-in-button">خروج</div>
+					</div>
+				</div>
+
+				<div id="help" class="hidden">
+					<div id="help-in">
+						<div id="help-in-text">
+							<table>
+								<tbody>
+									<tr>
+										<td width="20%"><div class="controls-itemb iconb-mouse active"></div></td>
+										<td>Used to move and select</td>
+									</tr>
+									<tr>
+										<td width="20%"><div class="controls-itemb iconb-add-state"></div></td>
+										<td>To add a new state</td>
+									</tr>
+									<tr>
+										<td width="20%"><div class="controls-itemb iconb-remove-state"></div></td>
+										<td>It is used to clear a state</td>
+									</tr>
+									<tr>
+										<td width="20%"><div class="controls-itemb iconb-add-line"></div></td>
+										<td>It is used to add communication between two states</td>
+									</tr>
+									<tr>
+										<td width="20%"><div class="controls-itemb iconb-remove-line"></div></td>
+										<td>It is used to clear the connection between two states</td>
+									</tr>
+									<tr>
+										<td width="20%"><div class="controls-itemb iconb-owner"></div></td>
+										<td>It is used to add the connection of a state with itself</td>
+									</tr>
+									<tr>
+										<td width="20%"><div class="controls-itemb">شروع</div></td>
+										<td>Select the start state</td>
+									</tr>
+									<tr>
+										<td width="20%"><div class="controls-itemb">پایان</div></td>
+										<td>Choose the end state</td>
+									</tr>
+									<tr>
+										<td width="20%"><div class="controls-itemb iconb-reset"></div></td>
+										<td>Clear page</td>
+									</tr>
+									<tr>
+										<td width="20%"><div class="controls-itemb iconb-text"></div></td>
+										<td>Write a string for the check</td>
+									</tr>
+									<tr>
+										<td width="20%"><div class="controls-itemb iconb-check"></div></td>
+										<td>Check the entered text</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div id="help-in-button">Quit</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
